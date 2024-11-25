@@ -84,6 +84,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1em;
 }
 #about-me p {
 	width: 80%;
@@ -144,6 +145,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 .quote__author {
@@ -239,6 +241,13 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.h6-style {
+    font-size: 1rem;         /* Taille de police équivalente à h6 */
+    font-weight: 500;        /* Poids de police équivalent à h6 */
+    margin-bottom: 0.5rem;   /* Marge équivalente à h6 */
+    line-height: 1.2;        /* Hauteur de ligne équivalente à h6 */
 }
 
 @media all and (max-width: 1180px) {
