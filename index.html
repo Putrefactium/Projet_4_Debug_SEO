@@ -14,7 +14,6 @@
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
-	<script defer src="./assets/schema.js"></script>
 	<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg">
 	<!-- Balises meta Instagram/Facebook - Open Graph -->
 	<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux">
@@ -88,11 +87,11 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.jpg" alt="Photo de Nina Carducci, photographe professionnelle à Bordeaux." loading="lazy">
+		<img src="./assets/images/nina.jpg" alt="Photo de Nina Carducci, photographe professionnelle à Bordeaux." loading="lazy" itemprop="image">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h6 class="about-me__introduction" itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
@@ -124,7 +123,7 @@
 <div id="services" itemscope itemtype="https://schema.org/Offer">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
-		<div class="service">
+		<div class="service" itemscope itemtype="https://schema.org/Offer">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -135,7 +134,7 @@
 			</div>
 
 		</div>
-		<div class="service">
+		<div class="service" itemscope itemtype="https://schema.org/Offer">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d'un rendu optimal pour vos publications</p>
@@ -145,7 +144,7 @@
 				<span itemprop="priceSpecification">2 AR par photo</span>
 			</div>
 		</div>
-		<div class="service">
+		<div class="service" itemscope itemtype="https://schema.org/Offer">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -185,5 +184,75 @@
 		</div>
 	</div>
 </div>
+<!-- Balise script pour les données structurées -->
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Nina Carducci - Photographe",
+		"image": "./assets/images/nina.jpg",
+		"description": "Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise. Services de shooting photo et retouches.",
+		"@id": "https://nina-carducci.github.io",
+		"url": "https://nina-carducci.github.io",
+		"priceRange": "€€",
+		"telephone": "+33556677889", 
+		"contactPoint": {
+		  "@type": "ContactPoint",
+		  "telephone": "+33556677889", 
+		  "contactType": "customer service",
+		  "availableLanguage": ["French"]
+		},
+		"address": {
+		  "@type": "PostalAddress",
+		  "streetAddress": "68 avenue Alsace Lorraine",
+		  "addressLocality": "Bordeaux",
+		  "postalCode": "33200",
+		  "addressCountry": "FR"
+		},
+		"geo": {
+		  "@type": "GeoCoordinates",
+		  "latitude": "44.8378",
+		  "longitude": "-0.5792"
+		},
+		"openingHoursSpecification": {
+		  "@type": "OpeningHoursSpecification",
+		  "dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		  ],
+		  "opens": "10:00",
+		  "closes": "19:00"
+		},
+		"sameAs": [
+		  "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		],
+		"offers": [
+		  {
+			"@type": "Offer",
+			"name": "Shooting photo",
+			"price": "350",
+			"priceCurrency": "EUR",
+			"description": "Shooting photo demi-journée, matériel et déplacement inclus, déplacement possible en Île-de-France"
+		  },
+		  {
+			"@type": "Offer",
+			"name": "Retouches photo",
+			"price": "50",
+			"priceCurrency": "EUR",
+			"description": "Retouches photo professionnelle, 2 allers-retours par photoinclus"
+		  },
+		  {
+			"@type": "Offer",
+			"name": "Album photos",
+			"price": "400",
+			"priceCurrency": "EUR",
+			"description": "Album photo A4 personnalisé, 30 pages recto/verso"
+		  }
+		]
+	}
+</script>
 </body>
 </html>
