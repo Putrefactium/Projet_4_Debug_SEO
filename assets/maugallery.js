@@ -151,16 +151,16 @@
         });
       }
       let index = 0,
-        next = null;
+        next = null; 
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i ;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      let newIndex = (index - 1 + imagesCollection.length) % imagesCollection.length;
+      next = imagesCollection[newIndex];
+
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -197,7 +197,9 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      let newIndex = (index + 1) % imagesCollection.length;
+      next = imagesCollection[newIndex];
+      
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
