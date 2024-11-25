@@ -114,11 +114,16 @@
       }
     },
     openLightBox(element, lightboxId) {
+      // Mettre à jour l'image source
       $(`#${lightboxId}`)
-        .find(".lightboxImage")
-        .attr("src", element.attr("src"));
-      $(`#${lightboxId}`).modal("toggle");
-    },
+          .find(".lightboxImage")
+          .attr("src", element.attr("src"));
+      
+      // Créer et afficher la modale avec Bootstrap 5
+      const modalElement = document.getElementById(lightboxId);
+      const modalInstance = new bootstrap.Modal(modalElement);
+      modalInstance.show();
+  },
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -240,7 +245,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
