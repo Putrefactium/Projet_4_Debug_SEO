@@ -46,7 +46,7 @@
 <body>
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+	<nav class="nav" role="navigation" aria-label="Menu principal">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -54,10 +54,10 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo Instagram"></a></li>
 		</ul>
-	</div>
+	</nav>
 </div>
 <div id="header">
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" role="region" aria-label="Galerie photos">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -95,69 +95,69 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
-<div id="gallery">
+<div id="gallery" itemscope itemtype="https://schema.org/ImageGallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Photo de concert." loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="Portrait d'un homme en constume." loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="Portrait d'une femme sur son lieu de travail." loading="lazy"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="Photo de deux paires de mains se serrant." loading="lazy"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="Portrait d'un homme fermant les yeux." loading="lazy"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="Photo de mariage sous un cocotier." loading="lazy"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.jpg" alt="Portrait d'une femme en tenue décontractée." loading="lazy"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="Photo du chanteur lors d'un concert." loading="lazy"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="Photo de portrait en entreprise." loading="lazy"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Photo de concert." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="Portrait d'un homme en constume." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="Portrait d'une femme sur son lieu de travail." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="Photo de deux paires de mains se serrant." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="Portrait d'un homme fermant les yeux." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="Photo de mariage sous un cocotier." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.jpg" alt="Portrait d'une femme en tenue décontractée." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="Photo du chanteur lors d'un concert." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="Photo de portrait en entreprise." loading="lazy" itemprop="image"/>
 		</div>
 	</div>
 	<div class="quote">
 		<figure>
-			<blockquote>
+			<blockquote lang="fr">
 				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
 </div>
-<div id="services">
+<div id="services" itemscope itemtype="https://schema.org/Offer">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
+				<h4><span itemprop="price">350</span><span itemprop="priceCurrency">€</span>/demi journée</h4>
+    			<span itemprop="priceSpecification">Matériel, déplacement inclus</span>
 			</div>
 
 		</div>
 		<div class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d'un rendu optimal pour vos publications</p>
 			</div>
 			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
+				<h4><span itemprop="price">50</span><span itemprop="priceCurrency">€</span>/photo</h4>
+				<span itemprop="priceSpecification">2 AR par photo</span>
 			</div>
 		</div>
 		<div class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
+				<h4><span itemprop="price">400</span><span itemprop="priceCurrency">€</span> album A4</h4>
+				<span itemprop="priceSpecification">30 pages recto/verso</span>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="quote">
 	<figure>
-		<blockquote>
+		<blockquote lang="fr">
 			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
