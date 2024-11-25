@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
-    <meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialisée dans les portraits, mariages, concerts et événements d'entreprise. Shooting photo et retouches.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/maugallery.js"></script>
-	<script defer src="./assets/scripts.js"></script>
-	<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg">
-	<!-- Balises meta Instagram/Facebook - Open Graph -->
-	<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://nina-carducci.github.io">
-	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
-	<meta property="og:description" content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise">
-	<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="fb:app_id" content="votre_app_id">
-	<meta property="instagram:creator" content="@ninacarducci.photo">
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="twitter:domain" content="https://nina-carducci.github.io">
-	<meta property="twitter:url" content="https://nina-carducci.github.io">
-	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
-	<meta name="twitter:description" content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise">
-	<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">
-	<!-- Balises meta géographiques -->
-	<meta name="geo.region" content="FR-33">
-	<meta name="geo.placename" content="Bordeaux">
-	<meta name="geo.position" content="44.8378;-0.5792">
-	<meta name="ICBM" content="44.8378, -0.5792">
-	<!-- Balises meta sécurité et cache -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Cache-control" content="public">
-	<meta name="robots" content="index, follow">
-	<meta name="author" content="Nina Carducci">
-</head>
+	<head>
+		<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialisée dans les portraits, mariages, concerts et événements d'entreprise. Shooting photo et retouches.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Préchargement des ressources critiques -->
+		<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+		<link rel="preload" href="./assets/style.min.css" as="style">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
+		<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg">
+		<!-- Préconnexions -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Chargement asynchrone des styles -->
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="./assets/style.min.css" media="print" onload="this.media='all'">
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<!-- Fallback pour les navigateurs sans JavaScript -->
+		<noscript>
+			<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+			<link rel="stylesheet" href="./assets/style.min.css">
+			<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+		</noscript>
+		<!-- Scripts chargés en différé -->
+		<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script defer src="./assets/maugallery.js"></script>
+		<script defer src="./assets/scripts.js"></script>
+		<!-- Balises meta Open Graph -->
+		<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://nina-carducci.github.io">
+		<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+		<meta property="og:description" content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise">
+		<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="fb:app_id" content="votre_app_id">
+		<meta property="instagram:creator" content="@ninacarducci.photo">
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="https://nina-carducci.github.io">
+		<meta property="twitter:url" content="https://nina-carducci.github.io">
+		<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+		<meta name="twitter:description" content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise">
+		<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">
+		<!-- Balises meta géographiques -->
+		<meta name="geo.region" content="FR-33">
+		<meta name="geo.placename" content="Bordeaux">
+		<meta name="geo.position" content="44.8378;-0.5792">
+		<meta name="ICBM" content="44.8378, -0.5792">
+		<!-- Balises meta sécurité et cache -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Cache-control" content="public">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Nina Carducci">
+	</head>
 <body>
 <div class="top-header">
 	<h1 class="name">Nina Carducci</h1>
