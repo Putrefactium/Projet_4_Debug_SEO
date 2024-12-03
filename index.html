@@ -6,58 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialisée dans les portraits, mariages, concerts et événements d'entreprise. Shooting photo et retouches.">
 		<meta http-equiv="Cache-Control" content="max-age=31536000">
-
-		<!-- CSS Critique inline -->
-		<style>
-			/* Styles critiques pour le premier rendu */
-			.top-header {
-				background-color: white;
-				position: sticky;
-				top: 0;
-				z-index: 1000;
-				display: flex;
-				justify-content: space-between;
-				padding-inline: 100px;
-				padding-block: 30px;
-				align-items: center;
-			}
-			
-			.carousel-item {
-				position: relative;
-			}
-			
-			.carousel-item img {
-				width: 100%;
-				height: auto;
-				object-fit: cover;
-			}
-	
-			.name {
-				font-size: 26px;
-			}
-	
-			.nav ul {
-				display: flex;
-				list-style-type: none;
-				font-size: 14px;
-				margin-bottom: 0;
-			}
-		</style>
-	
-		<!-- Script de chargement asynchrone des CSS -->
-		<script>
-			!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-		</script>
-	
-		<!-- Préchargement de l'image LCP -->
-		<link 
-			rel="preload" 
-			as="image" 
-			href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-360.jpg"
-			imagesrcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-650.jpg 360w"
-			imagesizes="650px"
-		>
-	
 		<!-- Chargement asynchrone des CSS -->
 		<link 
 			rel="preload" 
@@ -71,7 +19,6 @@
 			as="style" 
 			onload="this.onload=null;this.rel='stylesheet'"
 		>
-	
 		<!-- Polices optimisées -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,18 +28,15 @@
 			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 			onload="this.onload=null;this.rel='stylesheet'"
 		>
-	
 		<!-- Scripts différés -->
 		<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script defer src="./assets/maugallery.js"></script>
 		<script defer src="./assets/scripts.js"></script>
-	
 		<!-- Meta tags existants -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Nina Carducci">
-		
 		<!-- Open Graph tags -->
 		<meta property="og:site_name" content="Nina Carducci - Photographe professionnelle à Bordeaux">
 		<meta property="og:type" content="website">
@@ -104,15 +48,13 @@
 		<meta property="og:image:height" content="630">
 		<meta property="fb:app_id" content="votre_app_id">
 		<meta property="instagram:creator" content="@ninacarducci.photo">
-		
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta property="twitter:domain" content="https://nina-carducci.github.io">
 		<meta property="twitter:url" content="https://nina-carducci.github.io">
 		<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
 		<meta name="twitter:description" content="Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise">
-		<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">
-		
+		<meta name="twitter:image" content="https://nina-carducci.github.io/assets/images/nina.jpg">	
 		<!-- Balises meta géographiques -->
 		<meta name="geo.region" content="FR-33">
 		<meta name="geo.placename" content="Bordeaux">
@@ -142,41 +84,26 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img 
-					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-360.jpg"
-					srcset="
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-360.jpg 360w,
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-650.jpg 650w,
-						./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1300w"
-					sizes="(max-width: 360px) 100vw, (max-width: 650px) 100vw, 100vw"
+					src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
 					class="d-block w-100" 
 					alt="Photo d'un homme, de dos, traversant un passage piéton."
-					loading="eager"
-					fetchpriority="high"
+					 loading="eager"
+					 fetchpriority="high"
 				>
 			</div>
 			<div class="carousel-item">
 				<img 
-					src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-360.jpg"
-					srcset="
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-360.jpg 360w,
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-650.jpg 650w,
-						./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg 1300w"
-					sizes="(max-width: 360px) 100vw, (max-width: 650px) 100vw, 100vw"
+					src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
 					class="d-block w-100" 
 					alt="Photo de deux hommes, de face, dans la fosse d'un concert."
-					loading="lazy">
+					 loading="lazy">
 			</div>
 			<div class="carousel-item">
 				<img 
-					src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-360.jpg"
-					srcset="
-						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-360.jpg 360w,
-						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-650.jpg 650w,
-						./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg 1300w"
-					sizes="(max-width: 360px) 100vw, (max-width: 650px) 100vw, 100vw"
+					src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
 					class="d-block w-100"
 					alt="Photo de deux personnes mariées, s'embrassant langoureusement."
-					loading="lazy">
+					 loading="lazy">
 			</div>
 			</div>
 		</div>
@@ -192,7 +119,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.jpg" class="picture-Nina" alt="Photo de Nina Carducci, photographe professionnelle à Bordeaux." loading="eager" itemprop="image">
+		<img src="./assets/images/nina.webp" class="picture-Nina" alt="Photo de Nina Carducci, photographe professionnelle à Bordeaux." loading="eager" itemprop="image">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -205,15 +132,15 @@
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="Photo de concert." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="Portrait d'un homme en constume." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="Portrait d'une femme sur son lieu de travail." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="Photo de deux paires de mains se serrant." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="Portrait d'un homme fermant les yeux." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="Photo de mariage sous un cocotier." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.jpg" alt="Portrait d'une femme en tenue décontractée." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="Photo du chanteur lors d'un concert." loading="lazy" itemprop="image"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="Photo de portrait en entreprise." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Portrait d'un homme en constume." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Portrait d'une femme sur son lieu de travail." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de deux paires de mains se serrant." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un homme fermant les yeux." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo de mariage sous un cocotier." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp" alt="Portrait d'une femme en tenue décontractée." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo du chanteur lors d'un concert." loading="lazy" itemprop="image"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo de portrait en entreprise." loading="lazy" itemprop="image"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -285,7 +212,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.jpg" alt="Photo d'un appareil photo." loading="lazy">
+			<img src="./assets/images/camera.webp" alt="Photo d'un appareil photo." loading="lazy">
 		</div>
 	</div>
 </div>
@@ -295,7 +222,7 @@
 		"@context": "https://schema.org",
 		"@type": "LocalBusiness",
 		"name": "Nina Carducci - Photographe",
-		"image": "./assets/images/nina.jpg",
+		"image": "./assets/images/nina.webp",
 		"description": "Photographe professionnelle à Bordeaux, spécialisée dans les portraits, mariages, concerts et événements d'entreprise. Services de shooting photo et retouches.",
 		"@id": "https://nina-carducci.github.io",
 		"url": "https://nina-carducci.github.io",
